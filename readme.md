@@ -2,7 +2,10 @@
 
 ### Background
 
-Pathfinder is a line drawing puzzle game in which players must make a path from a starting point to an end point while playing around objects located on the grid. Pathfinder is loosely based on the puzzles found in The Witness by Thekla, Inc.
+Pathfinder is a line drawing puzzle game in which players must make a path from a starting point to an end point while playing around objects located on the grid. Pathfinder is based on the puzzles found in The Witness by Thekla, Inc.
+
+![witness1](img/The_Witness_gameplay_screenshot.jpg)
+![witness2](img/yHRNA.jpg)
 
 ### Functionality & Minimum Viable Product
 
@@ -15,7 +18,9 @@ Additionally the project will include:
 - [ ] A modal to describe the various puzzle obstacles available on the grid
 - [ ] A production readme
 
-### Wireframes
+### Wireframe
+
+![wireframe](img/Screenshot from 2016-11-12 17-59-14.png)
 
 ### Architecture and Technologies
 

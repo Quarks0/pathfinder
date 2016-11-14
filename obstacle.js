@@ -3,3 +3,5 @@ class Obstacle{
 
   }
 }
+
+export default Obstacle;
