@@ -18,8 +18,8 @@ Users should be able to:
 - [x] Dynamically draw a line using the arrow keys to navigate through the grid
 
 Additionally the project will include:
-- [ ] A modal to describe the various puzzle obstacles available on the grid
-- [ ] A production readme
+- [x] A modal to describe the various puzzle obstacles available on the grid
+- [x] A production readme
 
 ### Wireframe
 
@@ -48,7 +48,7 @@ Goals:
 **Day 2**: Finish up learning the Easel api, then start building out the grid and allowing for lines to be drawn within the grid.
 
 Goals:
-- Render a basic 5x5 grid
+- Render a basic grid
 - Allow rendering of lines
 - Show starting and ending locations
 
