@@ -1,5 +1,8 @@
 ## Pathfinder
 
+[Live Link][pathfinder]
+[pathfinder]: https://quarks0.github.io/
+
 ### Background
 
 Pathfinder is a line drawing puzzle game in which players must make a path from a starting point to an end point while playing around objects located on the grid. Pathfinder is based on the puzzles found in The Witness by Thekla, Inc.
