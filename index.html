@@ -6,10 +6,27 @@
     <script type="text/javascript" src="./app/assets/javascripts/bundle.js"></script>
     <link rel="stylesheet" type="text/css" href="./app/assets/styling/pathfinder.css"/>
     <title>Pathfinder</title>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal-text" id="modal-text">
+        </div>
+      </div>
+    </div>
   </head>
   <body id="root">
+    <header>
+      Pathfinder
+    </header>
+    <div class="instructions">
+      Use the arrow keys or WASD to create a path through the grid.
+      Press spacebar to restart the level.
+    </div>
     <canvas id="canvas">
       Canvas not supported
     </canvas>
+    <div class="obstacles">
+      Triangles: The path can only be drawn one one face of the block for each triangle present in the block.
+      Squares: The path must enclose squares of matching colors.
+    </div>
   </body>
 </html>

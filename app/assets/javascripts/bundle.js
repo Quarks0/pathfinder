@@ -78,12 +78,19 @@
 	  var length, obs, startPoint, endPoint, moves, endPos;
 	
 	  var level = 0;
+	  var modal = document.getElementById("modal");
+	  var modalClose = document.getElementById("close");
 	
 	  loadNextLevel();
 	
 	  stage.update();
 	
 	  document.onkeydown = keyPressed;
+	  window.onclick = function (event) {
+	    if (event.target == modal) {
+	      modal.style.display = "none";
+	    }
+	  };
 	
 	  function initializeGrid(length) {
 	    drawGrid(length);
@@ -156,6 +163,8 @@
 	
 	  function keyPressed(event) {
 	    var newPos = void 0;
+	    modal.style.display = "none";
+	
 	    switch (event.keyCode) {
 	      case 38:
 	      case 87:
@@ -205,6 +214,9 @@
 	          endPath();
 	        }
 	        break;
+	      case 32:
+	        level--;
+	        loadNextLevel();
 	      default:
 	        break;
 	    }
@@ -276,10 +288,14 @@
 	  }
 	
 	  function endPath() {
-	    if (equalArrays(endPos, lastMove()) && validSolution()) {
+	    if (equalArrays(endPos, lastMove())) {
+	      if (!validSolution()) {
+	        level--;
+	      } else {
+	        document.getElementById("modal-text").innerHTML = "You completed level " + level + " of 9. Press any key to continue";
+	        modal.style.display = "block";
+	      }
 	      loadNextLevel();
-	    } else {
-	      return false;
 	    }
 	  }
 	});

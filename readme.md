@@ -11,8 +11,8 @@ Pathfinder is a line drawing puzzle game in which players must make a path from 
 
 Users should be able to:
 
-- [ ] Reset the game board
-- [ ] Dynamically draw a line using the arrow keys to navigate through the grid
+- [x] Reset the game board
+- [x] Dynamically draw a line using the arrow keys to navigate through the grid
 
 Additionally the project will include:
 - [ ] A modal to describe the various puzzle obstacles available on the grid
